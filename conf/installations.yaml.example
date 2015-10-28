@@ -1,0 +1,10 @@
+- id: 123
+  name: My first test installation
+  md5_key: XXX
+  callback_password: YYY 
+  callback_url: http://x.x.x.x:80/worldpay-callback
+- id: 456
+  name: My second test installation
+  md5_key: XXX
+  callback_password: YYY 
+  callback_url: http://x.x.x.x:80/worldpay-callback

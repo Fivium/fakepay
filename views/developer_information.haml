@@ -1,0 +1,11 @@
+- if @params.size > 0
+  #dev-info.row.hidden
+    .col-md-12
+      %h2 Developer information
+      %table.table.table-bordered
+        - @params.sort.each do |key,value|
+          %tr
+            %th
+              = key
+            %td
+              = value

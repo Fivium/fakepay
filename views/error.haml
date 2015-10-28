@@ -1,0 +1,19 @@
+.container
+  .row
+    .col-md-6
+      .row
+        .col-md-12
+          %h1 FakePay Error
+          %p An error occurred during the (fake) payment processing.
+      = haml :payment_summary
+      .row
+        .col-md-12
+          %p.alert.alert-danger
+            = @error_message
+      = haml :developer_information
+  - if not @error_detailed_content.nil?
+    .row
+      .col-md-12
+        %h2 Detailed error information
+        %pre.pre-scrollable
+          = Haml::Helpers.html_escape @error_detailed_content

@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'puma'
+gem 'haml'
+gem 'activesupport'
+gem 'kramdown'
+gem 'timedcache'
+gem 'unirest'

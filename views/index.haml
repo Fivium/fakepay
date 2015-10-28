@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %meta{http: {equiv: 'Content-Type'}, content: 'text/html; charset=UTF-8'}
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}
+    %title< FakePay (a WorldPay Test Harness)
+    %link{href: '/css/bootstrap.min.css', rel: 'stylesheet', media: 'screen'}
+    %link{href: '/css/style.css', rel: 'stylesheet', media: 'screen'}
+  %body
+    .container
+      .row.outer-row
+        .col-md-12
+          .content-wrapper
+            = preserve Kramdown::Document.new(@readme).to_html
+    %script{src: '/js/jquery-2.0.3.min.js'}
+    %script{src: '/js/jquery.countdown.min.js'}
+    %script{src: '/js/bootstrap.min.js'}

@@ -1,0 +1,19 @@
+.container
+  .row
+    .col-md-6
+      .row
+        .col-md-12
+          %h1 FakePay
+          %p
+            This is a test payment to
+            %strong
+              = @installation['name']
+      = haml :payment_summary
+      .row
+        .col-md-12
+          %p.alert.alert-success The payment request was valid.
+      .row
+        .col-md-12
+          %a.btn.btn-primary{href: '/complete-payment'} Complete payment
+          %a.btn.btn-link{href: '/cancel-payment'} Cancel payment
+      = haml :developer_information
